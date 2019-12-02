@@ -227,7 +227,7 @@ uint32_t executable_hb::pe_find_hb_symbols_table()
         
         if ( CPPdebugHook_offset_ptr[0] + CPPdebugHook_offset_ptr[1] + CPPdebugHook_offset_ptr[2] != 0 )
         {
-            printf("\tusuall zero padding not found (%X %X %X)\n"
+            printf("\tusual zero padding not found (%X %X %X)\n"
                         , CPPdebugHook_offset_ptr[0]
                         , CPPdebugHook_offset_ptr[1]
                         , CPPdebugHook_offset_ptr[2]);
@@ -235,7 +235,7 @@ uint32_t executable_hb::pe_find_hb_symbols_table()
         }
         else
         {
-            printf("\tusuall zero padding found (%X %X %X)\n"
+            printf("\tusual zero padding found (%X %X %X)\n"
                         , CPPdebugHook_offset_ptr[0]
                         , CPPdebugHook_offset_ptr[1]
                         , CPPdebugHook_offset_ptr[2]);
@@ -248,7 +248,7 @@ uint32_t executable_hb::pe_find_hb_symbols_table()
     }
     
     //try MINGW case
-    printf("Chenking if this program compiled by MINGW\n");
+    printf("Cheсking if this program compiled by MINGW\n");
     
     uint8_t MINGW_usual_padding_to_symbols_table = 0x20;
     
