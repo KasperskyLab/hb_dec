@@ -1,7 +1,7 @@
-# hb_dec simple Harbour decompiler
+# Simple Harbour decompiler: hb_dec
 
 ## Descrption
-`hb_dec` finds, loads and prints the humanized version of Harbour opcodes from compiled Harbour script.
+Simple Harbour decompiler `hb_dec` finds, loads and prints the humanized version of Harbour opcodes from compiled Harbour script.
 Helped us with reverse engeneering compiled Harbour scripts.
 
 Not all opcodes are implemented (60 of 180 but it covered our needs).
@@ -18,7 +18,7 @@ Also i used memmem.c from https://github.com/git/git for windows compatibility.
 
 Use cmake to build: `mkdir build; cd build; cmake ..; make`
 
-Worked fine on Linux, code also Windows friendly (checked with i686-w64-mingw32-c++ (GCC) 7.3-win32 20180312)
+Worked fine on Linux, but code is also Windows friendly (checked with i686-w64-mingw32-c++ (GCC) 7.3-win32 20180312)
 
 ## Additional information
 
