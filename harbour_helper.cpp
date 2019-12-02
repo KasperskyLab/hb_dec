@@ -279,12 +279,12 @@ uint32_t executable_hb::pe_find_hb_symbols_table()
     
     if ( *_data_start_raw_offset - _data_start_va != MINGW_usual_padding_to_symbols_table )
     {
-        printf("\tusuall padding size missmatch (%X!=%X)\n", MINGW_usual_padding_to_symbols_table, (*_data_start_raw_offset - _data_start_va));
+        printf("\tusual padding size missmatch (%X!=%X)\n", MINGW_usual_padding_to_symbols_table, (*_data_start_raw_offset - _data_start_va));
         return 0;
     }
     else
     {
-        printf("\tusuall padding size correct (%X==%X)\n", MINGW_usual_padding_to_symbols_table, (*_data_start_raw_offset - _data_start_va));
+        printf("\tusual padding size correct (%X==%X)\n", MINGW_usual_padding_to_symbols_table, (*_data_start_raw_offset - _data_start_va));
         //TODO check it padding are zeroes
         
         printf("\tyes, it is MINGW\n");
